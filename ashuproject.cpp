@@ -147,8 +147,7 @@ int main()
 	allocate();
 	printf("\n\n\n");	
 	fprint();
-//	printf("\ntotal waiting time:-");
-//	turnat();
+
 	
 	
 }
