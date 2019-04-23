@@ -34,10 +34,11 @@ void fprint()																							//print the details about process
 	{
 	printf("\t\t\t%d\t\t%d\t\t%d\t\t%d\t\t%d\n",p[i].pNo,p[i].at,p[i].bt,p[i].wt,p[i].tat);
 	x=p[i].wt+x;
-	
+	a=p[i].tat+a;
 	}
 	printf("\t\t********************************************************************************\n");
-	printf("\n\ntotal average waiting time=%d",x/4);
+	printf("\n\ntotal average waiting time=%d",x/n);
+	printf("\ntotal turnaround time=%d",a/n);
 }
 void input()																			//to take the input about the process
 {
@@ -147,7 +148,4 @@ int main()
 	allocate();
 	printf("\n\n\n");	
 	fprint();
-
-	
-	
 }
